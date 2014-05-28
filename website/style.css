@@ -1,3 +1,8 @@
+@font-face {
+	font-family:"Century Gothic";
+	src: url(GOTHICI.ttf);
+}
+
 body {
 	background-color: rgb(136,132,127);
 }
@@ -47,7 +52,7 @@ body {
 	margin-left: 12%;
 	margin-right:8%;
 	font-size: 3em;
-	font-family: "Century Gothic";
+	font-family: "Century Gothic", sans-serif;
 	font-style: italic;
 	color: rgb(80,80,80);
 	text-align:center;
@@ -125,7 +130,7 @@ p,.onethird,.content {
 
 .photobox {
 	width:100%;
-	height:500px;
+	height:auto;
 	display: inline-flex;
 }
 
@@ -134,7 +139,7 @@ p,.onethird,.content {
 }
 
 .dataleft {
-	font-family: "Century Gothic";
+	font-family: "Century Gothic", sans-serif;
 	width: 80%;
 	font-style: italic;
 	font-size: 1em;
