@@ -33,8 +33,8 @@ body {
 
 #headerimage {
 	width:100%;
-	height:auto;
-	position:relative;
+	height:100%;
+	position:absolute;
 	z-index:-5;
 }
 
