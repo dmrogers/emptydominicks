@@ -1,5 +1,5 @@
 body {
-	background-color: rgb(156,152,147);
+	background-color: rgb(136,132,127);
 }
 
 #header {
@@ -25,7 +25,6 @@ body {
 	width:100%;
 	position:absolute;
 	z-index:-5;
-	border-bottom: 5px solid rgb(191,186,180);
 }
 
 #title {
@@ -61,6 +60,7 @@ body {
 	width: 80%;
 	margin: auto;
 	position: relative;
+	background-color: rgb(156,152,147);
 }
 
 iframe {
@@ -74,21 +74,21 @@ iframe {
 
 a {
 	text-decoration:none;
-	color:rgb(44,44,38);
+	color:rgb(24,24,18);
 }
 
-.widetext,.thirdtextleft,.thirdtextright,.onethird,.content {
+p,.onethird,.content {
 	font-family: Georgia;
 	font-size: 1.25em;
 	color: rgb(74,74,68);
 	background-color: rgb(156,152,147);
 	line-height:150%;
+	padding-bottom:1.25em;
 }
 
 .widetext {
 	width: 80%;
 	margin: auto;
-	padding-bottom:1.25em;
 }
 
 .widespacer {
@@ -103,13 +103,11 @@ a {
 .thirdtextleft {
 	margin-left: 15%;
 	margin-right: 2%;
-	padding-bottom: 1.25em;
 }
 
 .thirdtextright {
 	margin-right:13%;
 	margin-left:4%;
-	padding-bottom: 1.25em;
 }
 
 .onethird {
@@ -143,7 +141,7 @@ a {
 	margin-left: 17%;
 	position:relative;
 	display: inline-flex;
-	height:400px;
+	height:auto;
 }
 
 .databox {
@@ -172,7 +170,7 @@ th, td {
 		font-size: 2em;
 	}
 
-	.widetext,.thirdtextleft,.thirdtextright {
+	p {
 		font-size:1em;
 	}
 
