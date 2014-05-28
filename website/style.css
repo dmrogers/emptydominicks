@@ -12,6 +12,11 @@ body {
 	position: relative;
 }
 
+#footer {
+	width:100%;
+	position: relative;
+}
+
 #titlespacer {
 	width:100%;
 	position:relative;
@@ -31,6 +36,10 @@ body {
 	height:auto;
 	position:relative;
 	z-index:-5;
+}
+
+#footerimage {
+	width: 100%;
 }
 
 #title {
