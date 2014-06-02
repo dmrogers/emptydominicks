@@ -145,11 +145,11 @@ p,.onethird {
 
 .twothirds {
 	float: left;
-	width: 66%;
+	width: 55%;
 }
 
 .thirdtextleft {
-	margin-left: 15%;
+	margin-left: 18%;
 	margin-right: 2%;
 }
 
@@ -160,14 +160,22 @@ p,.onethird {
 
 .onethird {
 	float: left;
-	width: 34%;
+	width: 45%;
 	background-color: rgb (0,0,100);
 }
 
 .photo {
-	width:100%;
+	width:60%;
 	padding-top: 10px;
-	margin: auto 0px;
+	margin-left: 55px;
+}
+
+.captionright {
+	font-family: "Century Gothic";
+	width: 65%;
+	margin-left: 8%;
+	margin-right: 30%;
+	font-size: 0.75em;
 }
 
 .photobox {
@@ -205,15 +213,15 @@ p,.onethird {
 }
 
 th, td {
-	padding: 15px;
+	padding: 12px;
 	font-size:.75em;
 }
 
 .hover {
-	color: #BDB61B;
+	color: rgb(227, 165, 80);
 }
 
-@media screen and (max-width:1150px) {
+@media screen and (max-width:1150px) and (min-width:951px) {
 	#title {
 		font-size:3em;
 	}
@@ -233,6 +241,7 @@ th, td {
 	.dataleft {
 		font-size:0.75em;
 		height: 300px;
+		line-height: 140%;
 	}
 
 	th,td {
@@ -254,7 +263,7 @@ th, td {
 	}
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width:950px) and (min-width:820px) {
 	#title {
 		font-size:3em;
 	}
@@ -274,11 +283,12 @@ th, td {
 	.dataleft {
 		font-size:0.75em;
 		height: 300px;
+		line-height: 145%;
 	}
 
 	th,td {
 		font-size:0.7em;
-		padding: 5px;
+		padding: 1px;
 	}
 
 	.photobox {
@@ -292,5 +302,68 @@ th, td {
 	th, td {
 		padding: 10px;
 		font-size:.9em;
+	}
+}
+
+@media screen and (max-width:819px) {
+	#title {
+		font-size:1.5em;
+	}
+
+	#subtitle {
+		font-size: 1.25em;
+	}
+
+	.sectiontitle {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size:1em;
+	}
+
+	.dataleft {
+		font-size:0.75em;
+		height: 420px;
+		margin-left:10%;
+		margin-right:10%;
+	}
+
+	th,td {
+		font-size:0.7em;
+		padding: 2px;
+	}
+
+	.photobox {
+		height:350px;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	th, td {
+		padding: 10px;
+		font-size:.9em;
+	}
+
+	.twothirds {
+		width:100%;
+	}
+
+	.thirdtextleft, .thirdtextright {
+		width: 80%;
+		margin: auto;
+	}
+
+	.onethird {
+		width:100%;
+		margin:auto;
+	}
+
+	.photo {
+		width: 80%;
+		margin-left: 10%;
+		margin-right:10%;
 	}
 }

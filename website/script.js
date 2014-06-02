@@ -8,7 +8,11 @@ $( "a" ).hover(
         $( this ).removeClass("hover")
     });   
 
+$(function() {
+    $("img.lazy").lazyload({
+        threshold : 500
+    });
+});
 
 
-	});
-
+});
