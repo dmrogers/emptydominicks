@@ -84,6 +84,7 @@ body {
 .sectionbox {
 	position:relative;
 	width:100%;
+	height:0px;
 	padding-bottom:66.6666%;
 }
 
@@ -94,15 +95,16 @@ body {
 
 .sectiontitle {
 	font-family:"Century Gothic";
-	font-size: 3em;
+	font-size: 4em;
 	text-align:center;
 	color: rgb(156,156,156);
+	padding-top:50%;
 	text-shadow: 2px 2px #000000;
 }
 
 .content {
 	clear: both;
-	width: 80%;
+	width: 1100px;
 	margin: auto;
 	position: relative;
 	background-color: rgb(156,152,147);
@@ -182,7 +184,7 @@ p,.onethird {
 	font-family: "Century Gothic", sans-serif;
 	width: 80%;
 	font-style: italic;
-	font-size: 1em;
+	font-size: 1.25em;
 	margin-right: 3%;
 	margin-left: 17%;
 	position:relative;
@@ -203,8 +205,12 @@ p,.onethird {
 }
 
 th, td {
-	padding: 10px;
+	padding: 15px;
 	font-size:.75em;
+}
+
+.hover {
+	color: #BDB61B;
 }
 
 @media screen and (max-width:1150px) {
@@ -213,6 +219,10 @@ th, td {
 	}
 
 	#subtitle {
+		font-size: 2em;
+	}
+
+	.sectiontitle {
 		font-size: 2em;
 	}
 
@@ -232,5 +242,55 @@ th, td {
 
 	.photobox {
 		height:350px;
+	}
+
+	.content {
+		width: 900px;
+	}
+
+	th, td {
+		padding: 10px;
+		font-size:1em;
+	}
+}
+
+@media screen and (max-width:950px) {
+	#title {
+		font-size:3em;
+	}
+
+	#subtitle {
+		font-size: 2em;
+	}
+
+	.sectiontitle {
+		font-size: 2em;
+	}
+
+	p {
+		font-size:1em;
+	}
+
+	.dataleft {
+		font-size:0.75em;
+		height: 300px;
+	}
+
+	th,td {
+		font-size:0.7em;
+		padding: 5px;
+	}
+
+	.photobox {
+		height:350px;
+	}
+
+	.content {
+		width: 800px;
+	}
+
+	th, td {
+		padding: 10px;
+		font-size:.9em;
 	}
 }
