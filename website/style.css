@@ -96,6 +96,7 @@ body {
 .sectionbox {
 	position:relative;
 	width:100%;
+	height:0px;
 	padding-bottom:66.6666%;
 }
 
@@ -106,15 +107,16 @@ body {
 
 .sectiontitle {
 	font-family:"Century Gothic";
-	font-size: 3em;
+	font-size: 4em;
 	text-align:center;
 	color: rgb(156,156,156);
+	padding-top:50%;
 	text-shadow: 2px 2px #000000;
 }
 
 .content {
 	clear: both;
-	width: 80%;
+	width: 1100px;
 	margin: auto;
 	position: relative;
 	background-color: rgb(156,152,147);
@@ -155,11 +157,11 @@ p,.onethird {
 
 .twothirds {
 	float: left;
-	width: 66%;
+	width: 55%;
 }
 
 .thirdtextleft {
-	margin-left: 15%;
+	margin-left: 18%;
 	margin-right: 2%;
 }
 
@@ -170,15 +172,27 @@ p,.onethird {
 
 .onethird {
 	float: left;
-	width: 34%;
+	width: 45%;
 	background-color: rgb (0,0,100);
 }
 
 .photo {
-	width:100%;
+	width:60%;
 	padding-top: 10px;
+<<<<<<< HEAD
 	border-top: 10px; 
 	margin: auto 0px;
+=======
+	margin-left: 55px;
+}
+
+.captionright {
+	font-family: "Century Gothic";
+	width: 65%;
+	margin-left: 8%;
+	margin-right: 30%;
+	font-size: 0.75em;
+>>>>>>> FETCH_HEAD
 }
 
 .photobox {
@@ -195,7 +209,7 @@ p,.onethird {
 	font-family: "Century Gothic", sans-serif;
 	width: 80%;
 	font-style: italic;
-	font-size: 1em;
+	font-size: 1.25em;
 	margin-right: 3%;
 	margin-left: 17%;
 	position:relative;
@@ -216,16 +230,24 @@ p,.onethird {
 }
 
 th, td {
-	padding: 10px;
+	padding: 12px;
 	font-size:.75em;
 }
 
-@media screen and (max-width:1150px) {
+.hover {
+	color: rgb(227, 165, 80);
+}
+
+@media screen and (max-width:1150px) and (min-width:951px) {
 	#title {
 		font-size:3em;
 	}
 
 	#subtitle {
+		font-size: 2em;
+	}
+
+	.sectiontitle {
 		font-size: 2em;
 	}
 
@@ -236,6 +258,7 @@ th, td {
 	.dataleft {
 		font-size:0.75em;
 		height: 300px;
+		line-height: 140%;
 	}
 
 	th,td {
@@ -245,5 +268,119 @@ th, td {
 
 	.photobox {
 		height:350px;
+	}
+
+	.content {
+		width: 900px;
+	}
+
+	th, td {
+		padding: 10px;
+		font-size:1em;
+	}
+}
+
+@media screen and (max-width:950px) and (min-width:820px) {
+	#title {
+		font-size:3em;
+	}
+
+	#subtitle {
+		font-size: 2em;
+	}
+
+	.sectiontitle {
+		font-size: 2em;
+	}
+
+	p {
+		font-size:1em;
+	}
+
+	.dataleft {
+		font-size:0.75em;
+		height: 300px;
+		line-height: 145%;
+	}
+
+	th,td {
+		font-size:0.7em;
+		padding: 1px;
+	}
+
+	.photobox {
+		height:350px;
+	}
+
+	.content {
+		width: 800px;
+	}
+
+	th, td {
+		padding: 10px;
+		font-size:.9em;
+	}
+}
+
+@media screen and (max-width:819px) {
+	#title {
+		font-size:1.5em;
+	}
+
+	#subtitle {
+		font-size: 1.25em;
+	}
+
+	.sectiontitle {
+		font-size: 1.5em;
+	}
+
+	p {
+		font-size:1em;
+	}
+
+	.dataleft {
+		font-size:0.75em;
+		height: 420px;
+		margin-left:10%;
+		margin-right:10%;
+	}
+
+	th,td {
+		font-size:0.7em;
+		padding: 2px;
+	}
+
+	.photobox {
+		height:350px;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	th, td {
+		padding: 10px;
+		font-size:.9em;
+	}
+
+	.twothirds {
+		width:100%;
+	}
+
+	.thirdtextleft, .thirdtextright {
+		width: 80%;
+		margin: auto;
+	}
+
+	.onethird {
+		width:100%;
+		margin:auto;
+	}
+
+	.photo {
+		width: 80%;
+		margin-left: 10%;
+		margin-right:10%;
 	}
 }
