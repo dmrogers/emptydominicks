@@ -2,6 +2,9 @@ $(document).ready(function(){
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1c9627d555cf0f632d87207aba2983b026c40aaf
   var win = $(window),
       fullscreen = $('#headerimage'),
       image = fullscreen.find('fadingsign.jpg"'),
@@ -17,6 +20,7 @@ $(document).ready(function(){
       resizeImage();
     }
   });
+<<<<<<< HEAD
 =======
 var $img = $('#headerimage'),
     imageWidth = $img[0].width, //need the raw width due to a jquery bug that affects chrome
@@ -47,11 +51,16 @@ $img.css({
     bottom: 0,
     left: 0,
     right: 0
+=======
+
+>>>>>>> 1c9627d555cf0f632d87207aba2983b026c40aaf
 });
 
-	});
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1c9627d555cf0f632d87207aba2983b026c40aaf
   function resizeImage() {
     var winWidth = win.width(),
         winHeight = win.height(),
@@ -87,5 +96,8 @@ $(function() {
 
 });
 >>>>>>> FETCH_HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 61181cd... Made the title card
+=======
+>>>>>>> 1c9627d555cf0f632d87207aba2983b026c40aaf
