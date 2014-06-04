@@ -3,19 +3,20 @@ $(document).ready(function(){
 
 $( "a" ).hover(
     function () {
-        $( this ).addClass("hover")
+        $( this ).addClass("hover"),
+        console.log("hovered")
     },
     function () {
         $( this ).removeClass("hover")
     });   
 
-$('#subtitle').waypoint(function() {
+/*$('#subtitle').waypoint(function(direction) {
     $("#navbar").animate({
       left:"0",
-    }, 400, function() {
+    }, 200, function() {
       //animation complete
     });
-});
+});*/
 
 $( "li" ).hover(
     function () {
@@ -23,12 +24,10 @@ $( "li" ).hover(
     },
     function () {
         $( this ).removeClass("hover")
-    },
-    function () {
-      $( "body" ).css('cursor', 'pointer')
-    });   
+    }
+);   
 
-$("#a").click(
+/*$("#a").click(
     function() {
         $('html, body').animate({
            scrollTop: $("#subtitle").offset().top
@@ -62,7 +61,7 @@ $("#e").click(
            scrollTop: $("#sanity").offset().top
     }, 2000);
 });
-
+*/
 
 
 $(function() {
