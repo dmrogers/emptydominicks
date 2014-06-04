@@ -90,6 +90,20 @@ body {
 	z-index: 10;
 }
 
+#credits {
+	position: relative;
+	margin-left:8%;
+	margin-right:8%;
+	font-size:2em;
+	font-family: "Century Gothic", sans-serif;
+	float:left;
+	text-align:center;
+	color: rgb(156,156,156);
+	text-shadow: 2px 2px #000000;
+	z-index: 10;
+	margin-top: 1.5em;
+}
+
 
 #subtitle {
 	position: relative;
@@ -322,6 +336,12 @@ th, td {
 		font-size:3em;
 	}
 
+	#credits {
+		font-size: 1.25em;
+		padding-top: 1em;
+		margin-left:15%;
+	}
+
 	#subtitle {
 		font-size: 2em;
 	}
@@ -367,6 +387,10 @@ th, td {
 		font-size:3em;
 	}
 
+	#credits {
+		font-size: 1.3em;
+	}
+
 	#subtitle {
 		font-size: 2.5em;
 	}
@@ -404,6 +428,11 @@ th, td {
 @media screen and (max-width:819px) {
 	#title {
 		font-size:2em;
+	}
+
+	#credits {
+		font-size: 1em;
+		margin-left: 15%;
 	}
 
 	#subtitle {
