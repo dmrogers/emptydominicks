@@ -4,6 +4,9 @@
 	<title>When A Grocery Store Leaves the Neighborhood</title>
 	<link rel="stylesheet" type="text/css" href="reset.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
 </head>
 <body>
 
@@ -172,8 +175,31 @@
 			<p>While the store was not in her neighborhood, Grover used to shop at the 2nd Ward Dominick's when her son was at classes at Dance Center Evanston. </p>
 			<p>"It is essential to the walkability and quality of life for the neighborhood to have a grocery store there," she says. </p>
 		</div>
-			<iframe width='100%' height='500px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/dmrogers9.i9hja8ch/attribution,zoompan.html'></iframe>
+<div id='legend' style='display:none;'>
+  <strong>Grocery Stores in Evanston</strong>
+  <nav class='legend clearfix'>
+    <div><span style='background:#1087BF;'></span>Aldi</div>
+    <div><span style='background:#f5c272;'></span>CVS Pharmacy</div>
+    <div><span style='background:#a3e46b;'></span>D & D Finer Foods</div>
+    <div><span style='background:#677da7;'></span>Food 4 Less</div>
+    <div><span style='background:#f1f075;'></span>GFS Marketplace</div>
+    <div><span style='background:#d27591;'></span>J.D. Mills</div>
+    <div><span style='background:#1f1f1f;'></span>Sam's Club</div>
+    <div><span style='background:#1087bf;'></span>Target</div>
+    <div><span style='background:#d27591;'></span>Trader Joe's</div>
+    <div><span style='background:#e7857f;'></span>Jewel-Osco</div>
+    <div><span style='background:#c091e6;'></span>Walgreens</div>
+    <div><span style='background:#7ec9b1;'></span>Whole Foods</div>
+</div>
+<div id='map'></div>
+
+<script>
+  var map = L.mapbox.map('map', 'dmrogers9.i9hja8ch');
+  map.legendControl.addLegend(document.getElementById('legend').innerHTML);
+  map.scrollWheelZoom.disable();
+</script>
 		<div class="widetext">
+			<br>
 			<p>If you look at where the grocery stores are located in Evanston, aside from this new Whole Foods, all of the major stores run along Howard Street and Chicago Avenue, the city's south and east sides, respectively. It's on these streets that you will find Trader Joe's, Jewel Osco, and the other two Whole Foods. </p>
 		</div>
 		<div class="section" id="health">
