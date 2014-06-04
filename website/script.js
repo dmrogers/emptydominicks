@@ -9,6 +9,14 @@ $( "a" ).hover(
         $( this ).removeClass("hover")
     });   
 
+$('#subtitle').waypoint(function() {
+    $("#navbar").animate({
+      left:"0",
+    }, 400, function() {
+      //animation complete
+    });
+});
+
 $( "li" ).hover(
     function () {
         $( this ).addClass("hover")
@@ -55,11 +63,14 @@ $("#e").click(
     }, 2000);
 });
 
+
+
 $(function() {
     $("img.lazy").lazyload({
         threshold : 500
     });
 });
+
 
 
 });
