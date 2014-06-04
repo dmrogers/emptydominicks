@@ -47,11 +47,11 @@ body {
 	position: relative;
 	border-bottom: 5px solid rgb(191,186,180);
 }
-
+/*
 #titlecard {
 	height: 100vh;
 }
-
+*/
 #titlespacer {
 	width:100%;
 	position:relative;
@@ -59,20 +59,18 @@ body {
 	float:left;
 }
 
-/*#titlebox {
+#titlebox {
 	position:relative;
 	width:100%;
 	height:0;
 	padding-bottom:56.25%;
-}*/
+}
 
 #headerimage {
 	width:100%;
-	height:100vh;
-	position:relative;
-	z-index:-5;
-	background-size: cover;
-    background-origin: border-box 
+	height:100%;
+	position: absolute;
+	z-index: -5;
 }
 
 #footerimage {
@@ -80,85 +78,11 @@ body {
 }
 
 #title {
-	position: absolute;
-	margin-left:8%;
-	margin-right:8%;
-	margin-top: 40%;
-	font-size:5em;
-	font-family: "Trebuchet", sans-serif;
-	float:left;
-	text-align:center;
-	color: rgb(156,156,156);
-	text-shadow: 2px 2px #000000;
-}
-
-
-#subtitle {
-	position: relative;
-	margin-left: 12%;
-	margin-right:8%;
-	font-size: 3em;
-	font-family: "Century Gothic", sans-serif;
-	font-style: italic;
-	color: rgb(80,80,80);
-	text-align:center;
-	border-bottom: 5px solid rgb(191,186,180);
-	padding: 5px 0;
-	padding-top: 1em;
-	padding-bottom: .75em;
-}
-
-#subtitlespacer {
-	width:100%;
-	height:1.5em;
-}
-
-.sectionimage {
-	width:100%;
-	position: absolute;
-/*	//border-top: 5px solid rgb(191,186,180);
-	//position: relative;
-	//border-bottom: 5px solid rgb(191,186,180);*/
-}
-
-/*
-
-#headerimage {
-	width:100%;
-	height:100vh;
-	position:relative;
-	z-index:-5;
-	background-size: cover;
-    background-origin: border-box 
-}
-
-#footerimage {
-	width: 100%;
-}
-*/
-#navbar {
-	font-family:"Century Gothic Bold";
-	font-size: 1em;
-	position: fixed;
-	top: 35vh;
-	z-index: 0;
-	width:10%;
-	left:-200px;
-	text-align:center;
-	background-color: rgb(174, 169, 162);
-	padding: 1em;
-}
-
-li {
-	display: block;
-}
-
-/*#title {
 	position: relative;
 	margin-left:8%;
 	margin-right:8%;
 	font-size:5em;
-	font-family: "Trebuchet MS", sans-serif;
+	font-family: "Century Gothic Bold", sans-serif;
 	float:left;
 	text-align:center;
 	color: rgb(156,156,156);
@@ -172,7 +96,7 @@ li {
 	margin-left: 12%;
 	margin-right:8%;
 	font-size: 3em;
-	font-family: "Trebuchet MS Bold", sans-serif;
+	font-family: "Century Gothic Bold", sans-serif;
 	color: rgb(80,80,80);
 	text-align:center;
 	border-bottom: 5px solid rgb(84,84,78);
@@ -189,7 +113,7 @@ li {
 .sectionimage {
 	width:100%;
 	position: absolute;
-}*/
+}
 
 .sectionbox {
 	position:relative;
@@ -207,7 +131,6 @@ li {
 	font-family:"Trebuchet MS";
 	font-size: 4em;
 	text-align:center;
-/*	color: rgb(156,156,156);*/
 	color: #BBBBBB;	
 	padding-top:50%;
 	text-shadow: 2px 2px #000000;
@@ -385,10 +308,6 @@ th, td {
 
 @media screen and (min-width:1151px) {
 
-#title {
-	font-size:4em;
-	margin-top: 35%;
-}
 
 .videowrapper object {
 
@@ -555,4 +474,10 @@ th, td {
 		height:auto;
 
 	}
+
+@media screen and (max-width:500px) {
+	#titlespacer {
+		padding-top:10%;
+	}
+}
 }
